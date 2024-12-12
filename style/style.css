@@ -242,3 +242,6 @@
 .button-bg{
     background-color: #FDA31B;
 }
+#nav{
+    z-index: 999999999999999999;
+}
