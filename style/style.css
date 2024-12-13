@@ -262,3 +262,8 @@ border-radius: 5px;
 .foot{
   background-color:#012758;
 }
+.topheader{
+  position: relative;
+  background-image: url("../images/saniki-school-entrance-exam-coaching.jpeg");
+  filter: brightness(20%);
+}
