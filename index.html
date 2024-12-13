@@ -220,10 +220,10 @@
         </div>
         <!-- /col -->
         <div class="col-md-6 d-flex justify-centent-center align-items-center">
-           <div class="overflow-x-scroll overflow-section ">
-              <div id="testimonial" class="d-flex" style="width: 1000px;">
+           <!-- <div class="overflow-x-scroll overflow-section ">
+              <div id="testimonial" class="d-flex" style="width: 1000px;"> -->
                 <!-- testimonial data dynemic -->
-                  <div class="w-full px-2">
+                  <!-- <div class="w-full px-2">
                     <p class="fs-4 poppins-regular text-just">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio ut commodi voluptatem. Asperiores tempore soluta rerum! Asperiores, explicabo commodi.</p>
                       <div>
                           <div class="poppins-regular text-center">
@@ -231,15 +231,45 @@
                             <h4>Title</h4>
                           </div>
                       </div>
-                  </div>
-                  <div class="w-full">
-                    <p class="fs-4 poppins-regular text-just">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio ut commodi voluptatem. Asperiores tempore soluta rerum! Asperiores, explicabo commodi.</p>
-                      <div>
-                          <div class="poppins-regular text-center">
-                            <h3>Your name</h3>
-                            <h4>Title</h4>
-                          </div>
+                  </div> -->
+                  <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active poppins-regular">
+                        <p class="d-block text-just w-100 poppins-regular fs-5">The coaching program for Sainik School preparation was outstanding! The faculty was experienced, and the study material was well-structured, covering all topics of the AISSEE syllabus in detail. Regular mock tests and doubt-clearing sessions helped my child gain confidence and perform well in the entrance exam. Highly recommended for aspiring candidates!</p>
+                        <div class="text-center poppins-medium">
+                          <h2>
+                            Yuvraj singh
+                          </h2>
+                          <h4>Student</h4>
+                        </div>
                       </div>
+                      <div class="carousel-item">
+                        <p class="d-block w-100 poppins-regular text-just fs-5">I had the privilege of attending Royal Defence Academy to prepare for the AISSEE, and I can confidently say it was an invaluable experience. The faculty is not only highly knowledgeable but also incredibly supportive and encouraging. They created a very positive and competitive learning environment that motivated me to work harder.</p>
+                        <div class="text-center">
+                          <h2>
+                            Anant Kumar
+                          </h2>
+                          <h4>Student</h4>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <p class="d-block w-100 poppins-regular text-just fs-5">I am extremely grateful to Royal Defence Academy for their exceptional guidance in preparing for the AISSEE. The faculty is highly experienced and dedicated, providing personalized attention to each student. The study materials are comprehensive and well-structured, covering all aspects of the exam. The regular mock tests and doubt-clearing sessions were extremely helpful in boosting my confidence.</p>
+                        <div class="text-center">
+                          <h2>
+                            Bhanu Partap
+                          </h2>
+                          <h4>Student</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
                 
               </div>
@@ -316,6 +346,7 @@
 </div>
 </section>
 
+<footer id="footer"></footer>
 
 <!-- submit from section -->
 </body>
@@ -326,6 +357,13 @@
       document.getElementById('nav').innerHTML = data;
     })
     .catch(error => console.error('Error loading navigation:', error));
+
+  fetch('./components/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
 </script>
 <script src="./js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
