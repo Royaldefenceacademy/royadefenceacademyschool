@@ -11,11 +11,16 @@
     width: 35rem;
 }
 .logo-size{
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
 }
 .button-color{
     color: #da842d;
+}
+.button-bg-hover:hover{
+color: #da842d !important;
+border: 1px solid #da842d;
+border-radius: 5px;
 }
 .sec-bg-color{
     background-color: #FDA31B;
@@ -244,4 +249,13 @@
 }
 #nav{
     z-index: 999999999999999999;
+}
+.overflow-section{
+  width: 80%;
+  background-color: white;
+  height: 80%;
+}
+.text-just{
+
+  text-align: justify;
 }
