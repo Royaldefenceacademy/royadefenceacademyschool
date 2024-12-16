@@ -264,6 +264,27 @@ border-radius: 5px;
 }
 .topheader{
   position: relative;
-  background-image: url("../images/saniki-school-entrance-exam-coaching.jpeg");
-  filter: brightness(20%);
+  background-image: url("../images/page-header-img.jpg");
+  /* filter: brightness(20%); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pill-shape{
+  font-size: 12px;
+}
+.bg-gray{
+  background-color: #f2f4f7;
+}
+#overview{
+  display: block;
+}
+#keyfeature{
+display: none;
+}
+#classiv{
+  display: none;
+}
+#classix{
+  display: none;
 }

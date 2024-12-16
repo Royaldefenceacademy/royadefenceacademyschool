@@ -12,7 +12,7 @@
 </head>
 <body>
 <div id="nav"></div>
-<div id="topBar" data-name="About-us"></div>
+<div id="topBar" data-pagetitle="About us"></div>
 <div class="poppins-regular container mt-5">
     <p class="fs-5 text-just">
         Royal Defence Academy is a premier institute in Jaipur, Rajasthan. It provides coaching for All India Sainik Schools Entrance Examination (AISSEE), Rashtriya Military Schools Common Entrance Test (RMS-CET) in classes 6th and 9th for boys, and Rashtriya Indian Military College (RIMC) Entrance exam for both boys and girls. We admit students in the age group of 7 to 14 years.
@@ -44,14 +44,10 @@
         document.getElementById('footer').innerHTML = data;
       })
       .catch(error => console.error('Error loading footer:', error));
-    fetch('./components/topheaderofpage.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('topBar').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
+    
   </script>
   <script src="./js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/pageHeaderSetter.js"></script>
 </html>
