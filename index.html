@@ -27,12 +27,15 @@
 
   <!-- slider section  -->
   <section>
+    <div id="icons"></div>
+   
+  </div>
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
+        <div class="carousel-item active" data-bs-interval="1000">
           <img src="./images/BEST_COACHING_INSTITUTE_FOR_SAINIK_SCHOOL_ENTRANCE_EXAM_COACHING_RMS_RIMC_ONLINE_COACHING.webp" class="d-block w-100" alt="BEST COACHING INSTITUTE FOR SAINIK SCHOOL ENTRANCE EXAM COACHING RMS RIMC ONLINE COACHING">
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
+        <div class="carousel-item" data-bs-interval="1000">
           <img src="./images/All_India_Sainik_School_Entrance_Exam_AISSEE_2024_Royal_Defecne_academy_8278640248.webp" class="d-block w-100" alt="All India Sainik School Entrance Exam AISSEE 2024 Royal Defecne academy 8278640248">
         </div>
         <!-- <div class="carousel-item">
@@ -162,7 +165,7 @@
   <section class="container">
     <div class="text-center mt-5">
       <h4 class="button-color balsamiq-regular">Our Achievements</h4>
-      <h2 class="balsamiq-regular">Celebrating the Triumphs of Our Diligent and Dedicated Students</h2>
+      <h2 class="balsamiq-regular">Honoring the Success and Dedication of Our Hardworking Students</h2>
     </div>
 
 
@@ -353,6 +356,11 @@
       document.getElementById('footer').innerHTML = data;
     })
     .catch(error => console.error('Error loading footer:', error));
+    fetch('./components/side-icons.html')
+      .then(res => res.text())
+      .then(data =>{
+        document.getElementById('icons').innerHTML = data;
+      }).catch(e => console.error('Icons not load'))
 </script>
 <script src="./js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
