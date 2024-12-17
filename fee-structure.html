@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Structure</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="./style/style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+</head>
+<body>
+    <div id="nav"></div>
+    <div id="topBar" data-pagetitle="Fee Structure"></div>
+    <div class="container mt-5">
+        <h3 class="balsamiq-regular">Annual Fee Structure 2024-2025</h3>
+        <p class="poppins-regular mt-2">Explore our fee structure for the upcoming session:</p>
+
+        <h3 class="balsamiq-regular mt-2">Option 1: SCHOOL + HOSTEL + COACHING - Total Fees Rs 1,40,000 / Session</h3>
+        <p class="poppins-regular">
+            <ol>
+                <li class="p-2">Registration Fee: Rs 30,000 (Non-Refundable)</li>
+                <li class="p-2">1st Installment (After 1 Month of Admission): Rs 40,000</li>
+                <li class="p-2">2nd Installment (After 3 Months): Rs 40,000</li>
+                <li class="p-2">3rd Installment (After 2 Months): Rs 30,000</li>
+            </ol>
+        </p>
+        <h3 class="balsamiq-regular mt-2">Option 2: COACHING - Total Fees Rs 60,000 / Session</h3>
+        <p class="poppins-regular">
+            <ol>
+                <li class="p-2">Registration Fee: Rs 15,000 (Non-Refundable)</li>
+                <li class="p-2">1st Installment (After 1 Month): Rs 25,000</li>
+                <li class="p-2">2nd Installment (After 3 Months): Rs 20,000</li>
+                
+            </ol>
+        </p>
+        <h3 class="balsamiq-regular mt-2">Option 3: SCHOOL + COACHING - Total Fees Rs 70,000 / Session</h3>
+        <p class="poppins-regular">
+            <ol>
+                <li class="p-2">Registration Fee: Rs 15,000 (Non-Refundable)</li>
+                <li class="p-2">1st Installment (After 1 Month of Admission): Rs 25,000</li>
+                <li class="p-2">2nd Installment (After 3 Months): Rs 30,000</li>
+                
+            </ol>
+        </p>
+        <h3 class="balsamiq-regular mt-2">Miscellaneous Charges:</h3>
+        <p class="poppins-regular">
+            <ol>
+                <li class="p-2">Uniform: Rs 600 Per Piece.</li>
+                <li class="p-2">RMS CET Exam Form Fees (When notified): Rs 1,000</li>
+                <li class="p-2">Sainik School Form Fees (When notified): Rs 1,000</li>
+                <li class="p-2">Books, Copies, And Pen (Stationery): Rs 8,000</li>
+                
+            </ol>
+        </p>
+    </div>
+
+    <div id="footer"></div>
+</body>
+<script>
+    fetch('./components/nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+
+    fetch('./components/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+
+</script>
+<script src="./js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="./js/pageHeaderSetter.js"></script>
+<!-- <script src="./js/coursePage.js"></script> -->
+</html>
