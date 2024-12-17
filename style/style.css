@@ -294,3 +294,11 @@ display: none;
 .hover-light-gray:hover{
   color: #e4e4e4;
 }
+.icon{
+  color: #da842d ;
+  transition: all 0.5s;
+}
+.contact-page-icon:hover .icon{
+  background-color: #da842d;
+  color: white !important;
+}
