@@ -288,3 +288,9 @@ display: none;
 #classix{
   display: none;
 }
+.pointer{
+  cursor: pointer !important;
+}
+.hover-light-gray:hover{
+  color: #e4e4e4;
+}
