@@ -1,55 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style/style.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
-    rel="stylesheet">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        rel="stylesheet">
 </head>
+
 <body>
-  <div id="nav"></div>
-  <div id="topBar" data-pagetitle="Admission Process"></div>
-  <div class="container ">
-    <div class="row">
-        <div class="col-md-6">
-            <img class="figure-img img-fluid rounded" src="./images/all india sainik school entrance exam aissee 2022 yuvraj jadon  Royal Defecne Academy.png" alt="all india sainik school entrance exam aissee 2022 yuvraj jadon  Royal Defecne Academy">
+    <div id="nav"></div>
+    <div id="topBar" data-pagetitle="Admission Process"></div>
+    <div class="container ">
+        <div class="row mt-5 ">
+            <div class="col-md-6">
+                <img class="figure-img img-fluid rounded w-75"
+                    src="./images/all india sainik school entrance exam aissee 2022 yuvraj jadon  Royal Defecne Academy.png"
+                    alt="all india sainik school entrance exam aissee 2022 yuvraj jadon  Royal Defecne Academy">
+
+            </div>
+            <div class="col-md-6 flex-column justify-centent-center">
+                <h2 class="poppins-regular mt-5">Admission In Royal Defence Academy </h2>
+                <p class="poppins-regular my-3 text-just">
+                    Royal Defence Academy admits both boys and girls in the age group of 8 to 15 years for the
+                    preparation of Sainik School, Military School, and RIMC Dehradun Entrance Exam throughout the year.
+                    Our first batch starts every year on 1st April in all the branches of Royal Defence Academy.
+
+                    We also conduct crash courses for <strong>Sainik School, Military School</strong>, and RIMC Dehradun Entrance Exam
+                    when the admission forms of the respective schools are released. Admission is open to all students
+                    from 28 states and 8 union territories of India, including children of civilians and defence
+                    personnel. When a student gets admission at Royal Defence Academy, they have to take an entrance
+                    test, after which they will be allotted a class section according to their score on the entrance
+                    test.
+                </p>
+            </div>
 
         </div>
-        <div class="col-md-6">
-                <p class="poppins-regular">
-                    Royal Defence Academy  admits both boys and girls in the age group of 8 to 15 years for the preparation of Sainik School, Military School, and RIMC Dehradun Entrance Exam throughout the year. Our first batch starts every year on 1st April in all the branches of Lakshya Academy.
-
-We also conduct crash courses for Sainik School, Military School, and RIMC Dehradun Entrance Exam when the admission forms of the respective schools are released. Admission is open to all students from 28 states and 8 union territories of India, including children of civilians and defence personnel. When a student gets admission at Lakshya Academy, they have to take an entrance test, after which they will be allotted a class section according to their score on the entrance test.
-                </p>
+        <div class="mt-3">
+            <p class="poppins-regular">Some documents have to be submitted while taking admission to the academy, which are as follows:</p>
+            <ol class="poppins-regular ">
+                <li class="p-2">TC with countersignature</li>
+                <li class="p-2">Photocopy of Aadhaar card of student, father, and mother</li>
+                <li class="p-2">8 passport-size photographs of students and 4-4 photographs of parents of students</li>
+                <li class="p-2">Photocopy of Date of Birth Certificate</li>
+                <li class="p-2">Report card copy of previous class</li>
+                <li class="p-2">Copy of Residence Certificate</li>
+                <li class="p-2">Copy of Category Certificate (OBC, SC & ST), and not applicable for general category students</li>
+                <li class="p-2">Certificate copy for Defence serving person and PPO copy for Ex-servicemen.</li>
+            </ol>
+            <h2 class="balsamiq-regular">The following items are to be given by the parents at the time of admission:</h2>
+            <p class="poppins-regular text-just">2 Bed Sheets, 2 Pillowcases, 1 Pillow, 1 Blanket/Quilt, 2 Handkerchiefs, 1 Trunk/Suit Case with Child Name, 1 Bath Towel, 1 Bathroom Slipper (Pair), 1 Private Shoes/Sandals, 1 Water Bottle, 1 Private Socks (Pair), 1 Nail Cutter, 1 Tooth Brush, 1 Large Tooth Paste, 1 Dish Soap, 1 Big Powder, 1 Comb, 1 Hair Oil, 3 Clothes Hangers, 2 Civil Dress</p>
         </div>
     </div>
-        
-  </div>
 </body>
 <script>
     fetch('./components/nav.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('nav').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading navigation:', error));
-  
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+
     fetch('./components/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
-  
-  </script>
-  <script src="./js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="./js/pageHeaderSetter.js"></script>
-  <script src="./js/coursePage.js"></script>
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+
+</script>
+<script src="./js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="./js/pageHeaderSetter.js"></script>
+<script src="./js/coursePage.js"></script>
+
 </html>
