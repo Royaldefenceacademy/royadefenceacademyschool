@@ -361,3 +361,23 @@ display: none;
   bottom: 10px;
   left: 20px;
 }
+
+.glowing-btn{
+  animation: glowing 1500ms infinite;
+  color: white;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #720206;
+    box-shadow: 0 0 3px #720206;
+}
+50% {
+    background-color: #da842d;
+    box-shadow: 0 0 40px #da842d;
+}
+100% {
+  background-color: #720206;
+  box-shadow: 0 0 3px #720206;
+}
+}
