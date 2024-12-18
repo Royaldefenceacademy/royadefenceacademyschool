@@ -426,7 +426,7 @@ display: none;
     display: block;
   }
   .res-text-1230{
-    font-size: 9px !important;
+    font-size: 12px !important;
   }
   .logo-size{
     width: 90px;
@@ -434,6 +434,9 @@ display: none;
 }
 .enquiry-button{
     right: -10%
+}
+.he {
+  line-height: 14px;
 }
 .fs-md-5{
   font-size: 24px;
@@ -443,5 +446,11 @@ font-size: 12px !important;
 }
 .not-show-me{
   display: none;
+}
+.royal-heading{
+  width: 80% !important;
+}
+.res-text-heading{
+  font-size: 14px !important;
 }
 }
