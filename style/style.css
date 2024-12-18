@@ -396,7 +396,12 @@ display: none;
 }
 
 
-
+.show-me{
+  display: none;
+}
+.not-show-me{
+  display: block;
+}
 /* responsive  */
 
 @media only screen and (max-width: 1230px) {
@@ -417,6 +422,9 @@ display: none;
   }
 }
 @media only screen and (max-width:582px){
+  .show-me{
+    display: block;
+  }
   .res-text-1230{
     font-size: 9px !important;
   }
@@ -432,5 +440,8 @@ display: none;
 }
 .res-text-583{
 font-size: 12px !important;
+}
+.not-show-me{
+  display: none;
 }
 }
