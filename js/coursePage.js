@@ -47,12 +47,14 @@ function clickOnKeySyllabus(event){
 window.addEventListener('scroll', ()=>{
     const section = document.getElementById("courseInformation");
     const scrollY = window.scrollY;  // Get vertical scroll position
-
+    const size = window.screen.availWidth
     // Set the maximum scroll limit (e.g., 300px)
     const maxScroll = 1250; 
-        
-    if (scrollY <= maxScroll) {
-        section.style.transform = `translateY(${scrollY}px)`;
-        // section.style.position='absolute'
-    }
+        if(size > 650){
+
+            if (scrollY <= maxScroll) {
+                section.style.transform = `translateY(${scrollY}px)`;
+                // section.style.position='absolute'
+            }
+        }
 })
