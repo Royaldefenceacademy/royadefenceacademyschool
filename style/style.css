@@ -248,7 +248,7 @@ border-radius: 5px;
     background-color: #FDA31B;
 }
 #nav{
-    z-index: 999999999999999999;
+    z-index: 999;
 }
 .overflow-section{
   width: 80%;
@@ -380,4 +380,17 @@ display: none;
   background-color: #720206;
   box-shadow: 0 0 3px #720206;
 }
+}
+
+.off{
+  z-index: 9999999;
+
+}
+.enquiry-button{
+  transform: rotate(270deg);
+  position: fixed;
+  right: -3%;
+  z-index: 99;
+   top: 50%;
+  /* bottom: 50%;  */
 }
