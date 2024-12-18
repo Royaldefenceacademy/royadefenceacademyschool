@@ -391,27 +391,25 @@
   <!-- submit from section -->
 </body>
 <script>
-  fetch('./components/nav.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('nav').innerHTML = data;
-    })
-    .catch(error => console.error('Error loading navigation:', error));
+  const components = [
+  { url: './components/nav.html', elementId: 'nav', errorMsg: 'Error loading navigation' },
+  { url: './components/footer.html', elementId: 'footer', errorMsg: 'Error loading footer' },
+  { url: './components/side-icons.html', elementId: 'icons', errorMsg: 'Icons not loaded' },
+  { url: './components/offcanvas.html', elementId: 'enquiry-now', errorMsg: 'Enquiry form not loaded' }
+];
 
-  fetch('./components/footer.html')
+const loadComponent = ({ url, elementId, errorMsg }) => {
+  return fetch(url)
     .then(response => response.text())
     .then(data => {
-      document.getElementById('footer').innerHTML = data;
+      document.getElementById(elementId).innerHTML = data;
     })
-    .catch(error => console.error('Error loading footer:', error));
-  fetch('./components/side-icons.html')
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById('icons').innerHTML = data;
-    }).catch(e => console.error('Icons not load'))
-    fetch('./components/offcanvas.html').then(res=>res.text()).then(data=>{
-      document.getElementById('enquiry-now').innerHTML = data
-    }).catch(e=> console.error('enquiry form not loaded',e))
+    .catch(error => console.error(errorMsg, error));
+};
+
+Promise.all(components.map(loadComponent))
+  .then(() => console.log('All components loaded successfully'))
+  .catch(() => console.error('One or more components failed to load'));
 </script>
 <script src="./js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -13,7 +13,7 @@ function scrollONevent (){
             navigation.style.position = "fixed";
             navigation.style.width="100%"
             content.style.display="none"
-            console.log(navigation.style.position)
+            // console.log(navigation.style.position)
         }
         else{
             navigation.style.position = "static";
