@@ -416,3 +416,8 @@ display: none;
     display: none;
   }
 }
+@media only screen and (max-width:582px){
+  .res-text-1230{
+    font-size: 9px !important;
+  }
+}
