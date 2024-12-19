@@ -90,7 +90,54 @@
   <!-- /slider section  -->
 
   <!-- ABOUT US SECTION  -->
-  <div id="enquiry-now"></div>
+  <div id="">
+    <button class="btn enquiry-button poppins-medium glowing-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+      Enquiry Now
+    </button>
+    
+    <div class="offcanvas offcanvas-end off" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+      <div class="offcanvas-header sec-bg-color">
+        <h5 class="offcanvas-title text-white balsamiq-regular" id="staticBackdropLabel">Royal Defence Academy</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <form id="contact-form">
+            <div class="mb-3">
+              <label for="Name" class="form-label">Name</label>
+              <input type="Name" class="form-control" id="Name">
+              
+            </div>
+            <div class="mb-3">
+              <label for="number" class="form-label">Mobile</label>
+              <input type="number" class="form-control" id="number">
+            </div>
+            <div class="form-check border mt-3 py-2 d-flex align-items-center">
+              <input class="form-check-input m-1" type="checkbox" id="type11">
+              <label class="form-check-label" for="type11">Sainik School Entrance Exam Coaching</label>
+          </div>
+          <div class="form-check border mt-3 py-2 d-flex align-items-center">
+              <input class="form-check-input m-1" type="checkbox" id="type4">
+              <label class="form-check-label" for="type4">sainik school | Sainik School Admission Eligibility, Process, and Key Details | AISSEE Exam | All India Sainik Schools Entrance Exam 2024</label>
+          </div>
+          <div class="form-check border mt-3 py-2 d-flex align-items-center">
+              <input class="form-check-input m-1" type="checkbox" id="type5">
+              <label class="form-check-label" for="type5">Rashtriya Military Schools Entrance Exam Eligibility | syllabus | admission | process |  preparation</label>
+          </div>
+          <div class="form-check border mt-3 py-2 d-flex align-items-center">
+              <input class="form-check-input m-1" type="checkbox" id="type14">
+              <label class="form-check-label" for="type14">RMS Entrance Exam Eligibility</label>
+          </div>
+          
+            <button type="submit" class="btn sec-bg-color text-white w-100 mt-3 button-bg-hover">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+   
+
+  </div>
 
   <section class="container mt-5">
     <div class="row">
@@ -410,7 +457,6 @@
     { url: './components/nav.html', elementId: 'nav', errorMsg: 'Error loading navigation' },
     { url: './components/footer.html', elementId: 'footer', errorMsg: 'Error loading footer' },
     { url: './components/side-icons.html', elementId: 'icons', errorMsg: 'Icons not loaded' },
-    { url: './components/offcanvas.html', elementId: 'enquiry-now', errorMsg: 'Enquiry form not loaded' }
   ];
 
   const loadComponent = ({ url, elementId, errorMsg }) => {
@@ -426,6 +472,7 @@
     .then(() => console.log('All components loaded successfully'))
     .catch(() => console.error('One or more components failed to load'));
 </script>
+<script src="./js/formDataSender.js"></script>
 <script src="./js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
