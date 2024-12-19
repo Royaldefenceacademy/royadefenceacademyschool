@@ -394,7 +394,9 @@ display: none;
    top: 50%;
   /* bottom: 50%;  */
 }
-
+.card-img{
+  width: 70%;
+}
 
 .show-me{
   display: none;
@@ -453,4 +455,8 @@ font-size: 12px !important;
 .res-text-heading{
   font-size: 13px !important;
 }
+}
+.hover-img:hover .image-get-hover{
+  transition: all .5s;
+  transform: rotate(5deg);
 }
