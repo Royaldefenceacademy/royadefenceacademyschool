@@ -460,3 +460,6 @@ font-size: 12px !important;
   transition: all .5s;
   transform: rotate(5deg);
 }
+.course-transition{
+ transition: all 1s;
+}
