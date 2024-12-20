@@ -6,11 +6,11 @@ let imageLinkArray = ['all india sainik school entrance exam aissee 2022 Abhishe
 
 imageLinkArray.forEach((src,index)=>{
     insetGallery.innerHTML += ` 
-    <div class="col-md-4 mt-3">
+    <div class="col-md-4 mt-3 text-center">
     <a href="./images/${src}" target="_blank">
-        <img class="w-75" src="./images/${src}" alt="">
+        <img class="w-75" src="./images/${src}" alt="${src}" title="${src}">
     </a>
 </div>
 `
-console.log(src,index)
+
 })
