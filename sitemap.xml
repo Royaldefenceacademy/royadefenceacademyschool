@@ -73,5 +73,11 @@
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
   </url>
+  <!-- sainik school amravathinagar page -->
+  <url>
+    <loc>https://www.aisseecoaching.com/sainik-school-amaravathinagar.html</loc>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
 
 </urlset>
