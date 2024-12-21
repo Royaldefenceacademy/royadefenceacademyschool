@@ -93,17 +93,26 @@
   </url>
   <url>
   <!-- sainik school bakachadi -->
+  <url>
     <loc>https://www.aisseecoaching.com/sainik-school-balachadi.html</loc>
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
   </url>
   <!-- sainik school bhubaneswar -->
+  <url>
     <loc>https://www.aisseecoaching.com/sainik-school-bhubaneswar.html</loc>
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
   </url>
   <!-- sainik school bhubaneswar -->
+  <url>
     <loc>https://www.aisseecoaching.com/sainik-school-bijapur.html</loc>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <!-- sainik school bhubaneswar -->
+  <url>
+    <loc>https://www.aisseecoaching.com/sainik-school-chandrapur.html</loc>
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
   </url>
