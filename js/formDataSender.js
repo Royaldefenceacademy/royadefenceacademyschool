@@ -32,13 +32,15 @@ form.addEventListener('submit', async function (event) {
     };
 
     try {
-        const response = await fetch('https://www.aisseecoaching.com/api/proxy', {
+        console.log('p0')
+        const response = await fetch('http://3.110.189.42:8000/enquiry/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(payload)
         });
+        console.log('p1')
 
         if (response.ok) {
             alert("Enquiry submitted successfully!");
