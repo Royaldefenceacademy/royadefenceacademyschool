@@ -33,7 +33,7 @@ form.addEventListener('submit', async function (event) {
 
     try {
         console.log('p0')
-        const response = await fetch('http://3.110.189.42:8000/enquiry/', {
+        const response = await fetch('https://www.royaldefenceacademy.com/api/proxy', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
