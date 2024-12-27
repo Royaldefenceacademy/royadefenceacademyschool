@@ -92,7 +92,12 @@
             })
             .catch(error => console.error('Error loading footer:', error));
     
-    
+            fetch('./components/side-icons.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('icons').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
             </script>
 </body>
     <script src="./js/script.js"></script>
