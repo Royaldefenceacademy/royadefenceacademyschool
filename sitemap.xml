@@ -134,5 +134,21 @@
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
   </url>
+  <url>
+    <loc>https://www.aisseecoaching.com/sainik-school-coaching-ajmer.html</loc>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.aisseecoaching.com/sainik-school-coaching-jaipur.html</loc>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.aisseecoaching.com/sainik-school-coaching-bharatpur.html</loc>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  
 
 </urlset>
