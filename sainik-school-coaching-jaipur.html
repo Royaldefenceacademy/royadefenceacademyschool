@@ -164,43 +164,8 @@
             <h2 class="poppins-regular fs-3">List of cities for Sainik School Coaching in India</h2>
             <p class="poppins-regular">Are you looking for Sainik school exam coaching in India? Royal Defence Academy is among the best institutes for Sainik school online exam coaching in India.</p>
 
-            <div class="mt-4">
-                <h4>Rajasthan</h4>
-                <div class="d-flex flex-wrap">
-                    <a href="#">
-
-                        <button   class="mx-2 button">Ajmer</button>
-                    </a>
-                    <a href="#">
-
-                        <button   class="mx-2 button">Jaipur</button>
-                    </a>
-                    <a href="#">
-
-                        <button  class="mx-2 button">Jodhpur</button>
-                    </a>
-                    <a href="#">
-
-                        <button  class="mx-2 button">Bikaner</button>
-                    </a>
-                    <a href="#">
-
-                        <button  class="mx-2 button">Bharatpur</button>
-                    </a>
-                    <a href="#">
-
-                        <button  class="mx-2 button">Jodhpur</button>
-                    </a>
-                    <a href="#">
-
-                        <button  class="mx-2 button" >Udaipur</button>
-                    </a>
-                    <a href="#">
-
-                        <button  class="mx-2 button" >Sikar</button>
-                    </a>
-                </div>
-            </div>
+            <div id="post-links">
+               
         </div>
         
     </section>
@@ -227,6 +192,9 @@
         document.getElementById("icons").innerHTML = data;
       })
       .catch((error) => console.error("Error loading footer:", error));
+      fetch("./components/post-pages.html").then((res)=>res.text()).then((data)=>{
+        document.getElementById("post-links").innerHTML = data ;
+      }).catch((err)=>console.log(err, "Error loading post links"))
   </script>
   <script src="./js/script.js"></script>
   <script
