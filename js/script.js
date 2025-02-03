@@ -24,4 +24,17 @@ function scrollONevent (){
     }
     
 }
+const shakeButton = document.getElementById('shakeButton');
+
+function shakeButtonFunction() {
+    shakeButton.style.animation = 'shakeDiagonal 0.5s ease-in-out';
+    setTimeout(() => {
+        shakeButton.style.animation = '';
+    }, 500); // Reset animation after it finishes
+}
+
+// Shake every 3 seconds
+setInterval(shakeButtonFunction, 2000);
+
+
 
