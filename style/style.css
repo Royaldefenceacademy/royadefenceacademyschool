@@ -505,7 +505,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, #ff070f 61%);
   display: none;
 }
 .card-list:has(a:hover) a:not(:hover) {
-  filter: blur(2px)
+  filter: blur(1px)
 }
 .make-me-big:hover{
 transform: scale(1.1);
